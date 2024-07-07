@@ -3,10 +3,18 @@ title: Permissionless Market Making
 date: 2024-06-18 14:54:00 +/-TTTT
 categories: [AMM, ALM]
 tags: [alm, amm, uniswap, clmm]     # TAG names should always be lowercase
+mermaid: true
 ---
 
 The market-making strategy used by Noma consists of three sequential positions deployed in a Uniswap V3 concentrated liquidity pool. 
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```  
 
 ## Concentrated Liquidity Positions
 
