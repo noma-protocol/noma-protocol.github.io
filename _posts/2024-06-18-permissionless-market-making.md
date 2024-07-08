@@ -11,9 +11,7 @@ The market-making strategy used by Noma consists of three sequential positions d
 ```mermaid
 graph TD;
     A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    B-->A;
 ```  
 
 ## Concentrated Liquidity Positions
