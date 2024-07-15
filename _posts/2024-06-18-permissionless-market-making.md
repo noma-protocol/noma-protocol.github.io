@@ -6,12 +6,23 @@ tags: [alm, amm, uniswap, clmm]     # TAG names should always be lowercase
 mermaid: true
 ---
 
-The market-making strategy used by Noma consists of three sequential positions deployed in a Uniswap V3 concentrated liquidity pool. 
+The market-making strategy used by Noma consists of three positions deployed in a Uniswap V3 concentrated liquidity pool. 
 
 ```mermaid
-graph TD;
-    A-->B;
-    B-->A;
+    xychart-beta
+    title "Distribution"
+    x-axis "Price" [0.8, 0.84, 0.88, 0.92, 0.96, 1, 1.04, 1.08, 1.12, 1.16, 1.2, 1.24, 1.28, 1.32, 1.36, 1.4, 1.44, 1.48]
+    y-axis "Liquidity Depth" 0.025 --> 0.98
+    bar [0]
+    bar [0]
+    bar [0]
+    bar [1,0,0,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25]
+    bar [0]
+    bar [0,0,0,0,0,0,0,0,0,0,0,0,0.35,0.35,0.35,0.35,0.35,0.35]
+    bar [0]
+    bar [0]
+    bar [0]
+    bar [0]
 ```  
 
 ## Concentrated Liquidity Positions
