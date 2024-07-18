@@ -96,7 +96,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://raw.githubusercontent.com/noma-protocol/assets/190b06eef63033d35637bcb5bb5672b9e429df6e/logo.svg
+avatar: https://raw.githubusercontent.com/noma-protocol/assets/aa1a26827471fbfa3c063d671ae716f7383e2b88/logo-gray.svg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
