@@ -6,7 +6,16 @@ tags: [alm, amm, uniswap, clmm]     # TAG names should always be lowercase
 mermaid: true
 ---
 
-The market-making strategy used by Noma consists of three positions deployed in a Uniswap V3 concentrated liquidity pool. 
+Noma's market-making strategy centers on Uniswap V3's concentrated liquidity pools, optimizing liquidity provision through three strategically positioned LP positions. This allows Noma to capture trading fees and participate in market movements effectively, while actively managing concentrated liquidity to adapt to changing market conditions.
+
+
+## Concentrated Liquidity
+
+The structure of the liquidity is composed as follows:
+
+🟩 Floor 
+🟨 Anchor 
+⬜ Discovery
 
 ```mermaid
     xychart-beta
@@ -14,9 +23,9 @@ The market-making strategy used by Noma consists of three positions deployed in 
     x-axis "Price" [0.8, 0.84, 0.88, 0.92, 0.96, 1, 1.04, 1.08, 1.12, 1.16, 1.2, 1.24, 1.28, 1.32, 1.36, 1.4, 1.44, 1.48]
     y-axis "Liquidity Depth" 0.025 --> 0.98
     bar [0]
+    bar [1]
     bar [0]
-    bar [0]
-    bar [1,0,0,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25]
+    bar [0,0,0,0,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25]
     bar [0]
     bar [0,0,0,0,0,0,0,0,0,0,0,0,0.35,0.35,0.35,0.35,0.35,0.35]
     bar [0]
@@ -24,14 +33,6 @@ The market-making strategy used by Noma consists of three positions deployed in 
     bar [0]
     bar [0]
 ```  
-
-## Concentrated Liquidity Positions
-
-The structure of the liquidity is composed as follows:
-
-- Floor
-- Anchor
-- Discovery
 
 ### Floor
 This position contains the majority of the reserves backing the token  concentrated in a very narrow range - the minimum width of a "tick" of liquidity on Uniswap V3. The floor position is responsible for absorbing the circulating supply during periods of high market activity and maintaining the token's intrinsic minimum value.
