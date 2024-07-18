@@ -1,5 +1,5 @@
 ---
-title: Market Making
+title: Concentrated Liquidity
 date: 2024-06-18 14:54:00 +/-TTTT
 categories: [AMM, ALM]
 tags: [alm, amm, uniswap, clmm]     # TAG names should always be lowercase
