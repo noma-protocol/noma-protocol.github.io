@@ -34,10 +34,8 @@ twitter:
   username: nomaprotocol # change to your twitter username
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Noma
-  email: info@noma.money # change to your email address
+  name: Noma # Default author and copyright
+  email: info@noma.money
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/nomaprotocol # change to your twitter homepage
